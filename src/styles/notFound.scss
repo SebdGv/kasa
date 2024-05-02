@@ -1,0 +1,30 @@
+@use "./main.scss" as *;
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: $main-color;
+  gap: 113px;
+  margin: 113px 0;
+}
+
+.err404 {
+  font-size: 96px;
+  font-weight: 700;
+  color: $main-color;
+  margin: 0;
+}
+
+.errText {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 260px;
+}
+
+.backHome {
+  text-decoration: underline;
+}

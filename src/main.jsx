@@ -8,6 +8,8 @@ import "./styles/main.scss";
 
 const router = createBrowserRouter(routes);
 
+console.log(routes);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Header />
