@@ -1,0 +1,34 @@
+@use "./main.scss" as *;
+.dropdown {
+  background: $gray;
+  margin: 12px 0;
+  max-width: 582px;
+}
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: $main-color;
+  color: $white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+.dropdown-menu {
+  background: $gray;
+  color: $black;
+  border-radius: 5px;
+}
+
+.arrow {
+  transition: 0.3s;
+}
+
+.dropdown-close {
+  display: none;
+}
+.rotate-arrow {
+  transform: rotate(180deg);
+}

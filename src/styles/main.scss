@@ -10,11 +10,6 @@ $gray: #f6f6f673;
 
   color: $white;
   background-color: $white;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -29,6 +24,7 @@ li {
 body {
   margin: 0px;
   padding: 20px;
+  max-width: 100%;
 
   box-sizing: border-box;
 }
