@@ -1,0 +1,18 @@
+@use "./main.scss" as *;
+
+.thumbnail {
+  background: $main-color;
+
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+
+  width: 335px;
+  height: 255px;
+  border-radius: 10px;
+}
+.thumbnailTitle {
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}

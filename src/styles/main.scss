@@ -1,0 +1,34 @@
+$main-color: #ff6060;
+$white: #fff;
+$black: #000;
+$gray: #f6f6f673;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: $white;
+  background-color: $white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: $black;
+  text-decoration: inherit;
+}
+
+li {
+  list-style: none;
+}
+body {
+  margin: 0px;
+  padding: 20px;
+
+  box-sizing: border-box;
+}

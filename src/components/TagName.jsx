@@ -1,3 +1,11 @@
+import "../styles/tagName.scss";
+
 export default function TagName() {
-  return <div>tagName</div>;
+  return (
+    <>
+      <div className="tagName">
+        <p>Cozy</p>
+      </div>
+    </>
+  );
 }

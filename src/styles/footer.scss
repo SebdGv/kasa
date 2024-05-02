@@ -1,0 +1,22 @@
+@use "./main.scss" as *;
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: $black;
+
+  height: 209px;
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.copyright {
+  font-size: 12px;
+  max-width: 100px;
+}
