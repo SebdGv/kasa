@@ -6,8 +6,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./styles/main.scss";
 
-console.log(routes);
-
 const router = createBrowserRouter(routes);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

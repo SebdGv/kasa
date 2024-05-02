@@ -38,7 +38,7 @@ export default function Header() {
             <a href="#">Accueil</a>
           </li>
           <li>
-            <a href="#">A Propos</a>
+            <a href="#">À Propos</a>
           </li>
         </ul>
       </header>
