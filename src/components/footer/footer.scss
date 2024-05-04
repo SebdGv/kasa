@@ -1,4 +1,4 @@
-@use "./main.scss" as *;
+@use "../../styles/main.scss" as *;
 
 footer {
   display: flex;
@@ -9,6 +9,7 @@ footer {
   background: $black;
 
   height: 209px;
+  width: 100vw;
 }
 
 .copyright {

@@ -1,14 +1,16 @@
-import HomeBanner from "../components/HomeBanner";
-import Thumbnail from "../components/Thumbnail";
+import Thumbnail from "../components//thumbnail/Thumbnail";
+import HomeBanner from "../components/banners/HomeBanner";
 
 export default function Home() {
   return (
     <>
-      <HomeBanner />
-      <Thumbnail />
-      <Thumbnail />
-      <Thumbnail />
-      <Thumbnail />
+      <div className="pagesContainer">
+        <HomeBanner />
+
+        <Thumbnail />
+        <Thumbnail />
+        <Thumbnail />
+      </div>
     </>
   );
 }

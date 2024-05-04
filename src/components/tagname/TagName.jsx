@@ -1,4 +1,4 @@
-import "../styles/tagName.scss";
+import "./tagName.scss";
 
 export default function TagName() {
   return (

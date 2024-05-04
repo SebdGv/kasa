@@ -1,8 +1,8 @@
-@use "./main.scss" as *;
+@use "../../styles/main.scss" as *;
 
 .thumbnail {
   background: $main-color;
-  margin-bottom: 20px;
+  margin-top: 22px;
 
   display: flex;
   justify-content: left;
@@ -16,4 +16,5 @@
   padding-left: 20px;
   font-size: 18px;
   font-weight: 700;
+  color: $white;
 }

@@ -1,8 +1,10 @@
-@use "./main.scss" as *;
+@use "../../styles/main.scss" as *;
+
 .dropdown {
   background: $gray;
   margin: 12px 0;
   max-width: 582px;
+  text-align: left;
 }
 .dropdown-toggle {
   display: flex;
@@ -11,6 +13,8 @@
 
   background: $main-color;
   color: $white;
+  font-size: 13px;
+  font-weight: 700;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -20,6 +24,8 @@
   background: $gray;
   color: $black;
   border-radius: 5px;
+  padding: 0 0 20px 0;
+  margin: 20px;
 }
 
 .arrow {

@@ -1,0 +1,22 @@
+@use "../../styles/main.scss" as *;
+
+.profilIcon {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.name {
+  color: $main-color;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17.11px;
+  text-align: right;
+}
+
+.picture {
+  border-radius: 300px;
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
