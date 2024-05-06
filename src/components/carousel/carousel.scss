@@ -1,5 +1,8 @@
 @use "../../styles/main.scss" as *;
 
+.carousel {
+  position: relative;
+}
 .carouselImg {
   width: 335px;
   height: 255px;
@@ -7,5 +10,23 @@
   object-fit: cover;
 }
 
-.carousel-controls {
+.carouselNav {
+  position: absolute;
+  top: 127.5px;
+  left: 16px;
+
+  & .right-arrow {
+    position: absolute;
+    left: 292px;
+  }
+  & .carousel-number {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 140.5px;
+  }
+}
+
+.navArrow {
+  width: 11.87px;
 }

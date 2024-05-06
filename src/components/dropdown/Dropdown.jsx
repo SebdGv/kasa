@@ -13,7 +13,7 @@ export default function Dropdown() {
           <img
             className={`arrow ${!isOpen ? "rotate-arrow" : ""}`}
             src="./src/assets/smallArrow.svg"
-            alt="fleche de dérourelement menu"
+            alt="open arrow"
           />
         </button>
         <ul className={`dropdown-menu ${!isOpen ? "dropdown-close" : ""}`}>

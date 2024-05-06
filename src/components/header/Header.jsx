@@ -6,19 +6,25 @@ export default function Header() {
     <>
       <header className="header">
         <div className="logo">
-          <img
-            className="headerLogo"
-            src="./src/assets/redLogo.svg"
-            alt="Logo Kasa"
-          />
+          <Link to={"/"}>
+            <img
+              className="headerLogo"
+              src="./src/assets/redLogo.svg"
+              alt="Logo Kasa"
+            />
+          </Link>
         </div>
         <nav className="nav">
           <ul>
             <li>
-              <Link to={"/"}>Accueil</Link>
+              <Link to={"/"}>
+                <p> Accueil</p>
+              </Link>
             </li>
             <li>
-              <Link to={"/about"}>À Propos</Link>
+              <Link to={"/about"}>
+                <p>À Propos</p>
+              </Link>
             </li>
           </ul>
         </nav>

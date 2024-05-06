@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
 import "./thumbnail.scss";
 
-export default function Thumbnail() {
+// eslint-disable-next-line react/prop-types
+export default function Thumbnail({ id, title, cover }) {
+  const thumbnailStyle = {
+    background: `url(${cover})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  };
   return (
     <>
-      <Link to="/logement">
-        <div className="thumbnail">
-          <p className="thumbnailTitle">
-            Titre de la <br /> location
-          </p>
+      <Link to={`/logement/${id}`}>
+        <div className="thumbnail" style={thumbnailStyle}>
+          <p className="thumbnailTitle">{title}</p>
         </div>
       </Link>
     </>

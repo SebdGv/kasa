@@ -1,0 +1,16 @@
+@use "../../styles/main.scss" as *;
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+  }
+  .cards-container {
+    background: $gray;
+    padding: 50px;
+    margin-top: 43px;
+
+    border-radius: 20px;
+  }
+}

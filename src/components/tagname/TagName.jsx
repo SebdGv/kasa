@@ -1,10 +1,11 @@
 import "./tagName.scss";
 
-export default function TagName() {
+// eslint-disable-next-line react/prop-types
+export default function TagName({ tag }) {
   return (
     <>
       <div className="tagName">
-        <p>Cozy</p>
+        <p>{tag}</p>
       </div>
     </>
   );

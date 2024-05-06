@@ -10,10 +10,7 @@ export default function HomeBanner() {
           alt="photographie d'une plage en bord de falaise"
         />
         <div className="imgOpacity"></div>
-        <p className="textBanner">
-          Chez vous, <br />
-          partout et ailleurs
-        </p>
+        <p className="textBanner">Chez vous, partout et ailleurs</p>
       </div>
     </>
   );
