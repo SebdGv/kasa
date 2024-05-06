@@ -18,10 +18,11 @@ a {
 li {
   list-style: none;
 }
-body {
-  margin: 0px;
-  max-width: 100%;
 
+body {
+  margin: auto;
+  width: 100%;
+  max-width: 1400px;
   box-sizing: border-box;
 }
 
@@ -31,6 +32,17 @@ body {
 
 .logTitle {
   margin-bottom: 10px;
+}
+
+.logDrop {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .logDrop {
+    flex-direction: row;
+    gap: 5vw;
+  }
 }
 
 .title {

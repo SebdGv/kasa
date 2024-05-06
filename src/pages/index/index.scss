@@ -3,7 +3,7 @@
 @media screen and (min-width: 600px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
   .cards-container {
@@ -12,5 +12,13 @@
     margin-top: 43px;
 
     border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
   }
 }

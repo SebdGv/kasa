@@ -9,7 +9,7 @@ export default function Header() {
           <Link to={"/"}>
             <img
               className="headerLogo"
-              src="./src/assets/redLogo.svg"
+              src="/src/assets/redLogo.svg"
               alt="Logo Kasa"
             />
           </Link>

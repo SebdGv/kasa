@@ -26,6 +26,9 @@
   border-radius: 5px;
   padding: 0 0 20px 0;
   margin: 20px;
+  & li {
+    font-size: 12px;
+  }
 }
 
 .arrow {
@@ -50,5 +53,8 @@
 
     line-height: 34.22px;
     font-size: 24px;
+  }
+  .dropdown-menu li {
+    font-size: 18px;
   }
 }

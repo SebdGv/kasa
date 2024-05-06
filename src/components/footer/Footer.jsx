@@ -8,7 +8,7 @@ export default function Footer() {
         <Link to={"/"}>
           <img
             className="footerLogo"
-            src="./src/assets/whitelogo.svg"
+            src="/src/assets/whitelogo.svg"
             alt="Logo Kasa"
           />
         </Link>

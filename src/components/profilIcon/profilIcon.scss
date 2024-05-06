@@ -12,6 +12,7 @@
   font-weight: 500;
   line-height: 17.11px;
   text-align: right;
+  max-width: 50px;
 }
 
 .picture {
@@ -19,4 +20,11 @@
   width: 32px;
   height: 32px;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .name {
+    font-size: 18px;
+    max-width: 110px;
+  }
 }

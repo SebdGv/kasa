@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./dropdown.scss";
 
-export default function Dropdown() {
+// eslint-disable-next-line react/prop-types
+export default function Dropdown({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = () => setIsOpen(!isOpen);
 
@@ -9,21 +10,20 @@ export default function Dropdown() {
     <>
       <div className="dropdown">
         <button className="dropdown-toggle" onClick={toggleDropdown}>
-          Équipements
+          {title}
           <img
             className={`arrow ${!isOpen ? "rotate-arrow" : ""}`}
-            src="./src/assets/smallArrow.svg"
+            src="/src/assets/smallArrow.svg"
             alt="open arrow"
           />
         </button>
         <ul className={`dropdown-menu ${!isOpen ? "dropdown-close" : ""}`}>
-          <li>Climatisation</li>
-          <li>Wi-Fi</li>
-          <li>Cuisine</li>
-          <li>Espace de travail</li>
-          <li>Fer à repasser</li>
-          <li>Sèche-cheveux</li>
-          <li>Cintres</li>
+          {Array.isArray(content) ? (
+            // eslint-disable-next-line react/prop-types
+            content.map((item, index) => <li key={index}>{item}</li>)
+          ) : (
+            <li>{content}</li>
+          )}
         </ul>
       </div>
     </>
