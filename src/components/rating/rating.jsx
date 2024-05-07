@@ -1,14 +1,21 @@
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./rating.scss";
 
-export default function Rating() {
+// eslint-disable-next-line react/prop-types
+export default function Rating({ rating }) {
+  const stars = Array.from({ length: 5 }, (_, index) => index < rating);
+
   return (
     <>
       <div className="rating">
-        <img src="../src/assets/redStar.svg" alt="" className="starActive" />
-        <img src="../src/assets/redStar.svg" alt="" className="starActive" />
-        <img src="../src/assets/redStar.svg" alt="" className="starActive" />
-        <img src="../src/assets/star.svg" alt="" className="starActive" />
-        <img src="../src/assets/star.svg" alt="" className="starActive" />
+        {stars.map((filled, index) => (
+          <FontAwesomeIcon
+            key={index}
+            icon={faStar}
+            className={filled ? "redStar stars" : "greyStar stars"}
+          />
+        ))}
       </div>
     </>
   );

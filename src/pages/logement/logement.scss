@@ -1,0 +1,55 @@
+@use "../../styles/main.scss" as *;
+
+.logementDropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.logementContent {
+  width: 100%;
+}
+
+.logementTitle h1 {
+  margin-bottom: 5px;
+  color: $main-color;
+  font-size: 18px;
+}
+
+.logementLocation {
+  color: $black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.96px;
+}
+
+.logementRate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .logementContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logementDropdown {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5vw;
+  }
+
+  .logementLocation {
+    font-size: 18px;
+  }
+  .logementRate {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
-import "../styles/error.scss";
+import "./error.scss";
 
 export default function NotFound() {
   return (

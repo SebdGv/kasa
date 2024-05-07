@@ -2,6 +2,7 @@ $main-color: #ff6060;
 $white: #fff;
 $black: #000;
 $gray: #f6f6f673;
+$grayDark: #e3e3e3;
 
 :root {
   font-family: "Montserrat", sans-serif;
@@ -19,53 +20,25 @@ li {
   list-style: none;
 }
 
+html,
 body {
-  margin: auto;
-  width: 100%;
   max-width: 1400px;
   box-sizing: border-box;
 }
 
 .pagesContainer {
-  margin: 27px 20px;
-}
-
-.logTitle {
-  margin-bottom: 10px;
-}
-
-.logDrop {
+  margin: 5px 20px;
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 600px) {
-  .logDrop {
-    flex-direction: row;
-    gap: 5vw;
-  }
-}
-
-.title {
-  color: $main-color;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 25.67px;
-}
-
-.logLocation {
-  color: $black;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 19.96px;
-}
-
-.logRate {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
+  html,
+  body {
+    margin: auto;
+  }
+
   .pagesContainer {
     margin: 50px 100px;
   }

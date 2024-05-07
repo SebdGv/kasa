@@ -1,5 +1,5 @@
-import Banner from "../../../components/banners/Banner";
-import Dropdown from "../../../components/dropdown/Dropdown";
+import Banner from "../../components/banners/Banner";
+import Dropdown from "../../components/dropdown/Dropdown";
 import "./about.scss";
 
 export default function About() {

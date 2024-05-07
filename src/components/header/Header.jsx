@@ -17,12 +17,18 @@ export default function Header() {
         <nav className="nav">
           <ul>
             <li>
-              <Link to={"/"}>
+              <Link
+                to={"/"}
+                className={location.pathname === "/*" ? "activeLink" : ""}
+              >
                 <p> Accueil</p>
               </Link>
             </li>
             <li>
-              <Link to={"/about"}>
+              <Link
+                to={"/about"}
+                className={location.pathname === "*/about" ? "activeLink" : ""}
+              >
                 <p>À Propos</p>
               </Link>
             </li>

@@ -4,6 +4,7 @@
   background: $gray;
   margin: 12px 0;
   text-align: left;
+  width: 100%;
 }
 .dropdown-toggle {
   display: flex;
@@ -11,7 +12,6 @@
   justify-content: space-between;
 
   background: $main-color;
-  min-width: 335px;
   color: $white;
   font-size: 13px;
   font-weight: 700;
@@ -42,14 +42,14 @@
   transform: rotate(180deg);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .dropdown {
     max-width: 1024px;
     width: 100%;
   }
   .dropdown-toggle {
     max-width: 1024px;
-    height: 54px;
+    height: 52px;
 
     line-height: 34.22px;
     font-size: 24px;

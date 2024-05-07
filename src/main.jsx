@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import NotFound from "./pages/error";
+import About from "./pages/about/about";
+import NotFound from "./pages/error/error";
 import Home from "./pages/index";
-import About from "./pages/index/about/about";
-import Logement from "./pages/logement";
+import Logement from "./pages/logement/logement";
 import "./styles/main.scss";
 
 const router = createBrowserRouter([
