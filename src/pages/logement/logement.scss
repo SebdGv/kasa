@@ -11,7 +11,7 @@
 }
 
 .logementTitle h1 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: $main-color;
   font-size: 18px;
 }
@@ -42,6 +42,9 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 5vw;
+  }
+  .logementTags {
+    margin-top: 20px;
   }
 
   .logementLocation {

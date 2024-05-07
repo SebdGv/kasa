@@ -4,6 +4,17 @@
   position: relative;
   width: 100%;
 }
+
+.carouselNav {
+  position: absolute;
+  width: 100%; // S'étend sur toute la largeur de la zone d'affichage
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between; // Alignement des éléments aux extrémités
+  align-items: center; // Centrage vertical
+}
+
 .carouselImg {
   width: 100%;
   height: 255px;
@@ -11,26 +22,16 @@
   object-fit: cover;
 }
 
-.carouselNav {
-  position: absolute;
-  top: 127.5px;
-  left: 16px;
-
-  & .right-arrow {
-    position: absolute;
-    left: 292px;
-  }
-  & .carousel-number {
-    display: none;
-    position: absolute;
-    top: 80px;
-    left: 140.5px;
-  }
+.carousel-number {
+  display: none;
 }
 
 .navArrow {
-  width: 11.87px;
+  padding: 20px;
   cursor: pointer;
+  font-size: 19px;
+  color: $white;
+  z-index: 10; // Assure que les flèches sont au-dessus de l'image
 }
 
 @media screen and (min-width: 600px) {
@@ -40,9 +41,17 @@
     height: 415px;
     border-radius: 25px;
   }
-  .carouselNav .carousel-number {
-    display: inline;
-    top: 230px;
-    left: 35vw;
+  .carousel-number {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 24px;
+    transform: translateY(50%);
+    font-size: 18px;
+    color: $white;
+  }
+  .navArrow {
+    font-size: 46px; // Taille des icônes augmentée pour une meilleure visibilité
   }
 }

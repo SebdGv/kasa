@@ -1,4 +1,9 @@
 /* eslint-disable react/prop-types */
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import "./carousel.scss";
 
@@ -24,28 +29,26 @@ export default function Carousel({ images }) {
   return (
     <>
       <div className="carousel">
+        <div className="carouselNav">
+          <FontAwesomeIcon
+            onClick={prevImage}
+            icon={faChevronLeft}
+            className="navArrow left-arrow"
+          />
+          <p className="carousel-number">
+            {currentImageIndex + 1}/{images.length}
+          </p>
+          <FontAwesomeIcon
+            onClick={nextImage}
+            icon={faChevronRight}
+            className="navArrow right-arrow"
+          />
+        </div>
         <img
           className="carouselImg"
           src={images[currentImageIndex]}
           alt="Photographie du logement"
         />
-        <div className="carouselNav">
-          <img
-            className="navArrow left-arrow"
-            src="../src/assets/left-arrow.svg"
-            alt="image pécédente"
-            onClick={prevImage}
-          />
-          <img
-            className="navArrow right-arrow"
-            src="../src/assets/right-arrow.svg"
-            alt="image pécédente"
-            onClick={nextImage}
-          />
-          <p className="carousel-number">
-            {currentImageIndex + 1}/{images.length}
-          </p>
-        </div>
       </div>
     </>
   );
