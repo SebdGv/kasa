@@ -41,8 +41,12 @@ export default function Logement() {
           </div>
         </div>
         <div className="logementDropdown">
-          <Dropdown title="Description" content={logement.description} />
-          <Dropdown title="Équipements" content={logement.equipments} />
+          <div className="dropdownDescription">
+            <Dropdown title="Description" content={logement.description} />
+          </div>
+          <div className="dropdownEquipements">
+            <Dropdown title="Équipements" content={logement.equipments} />
+          </div>
         </div>
       </div>
     </>

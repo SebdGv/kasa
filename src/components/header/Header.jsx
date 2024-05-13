@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./header.scss";
 
 export default function Header() {
+  const location = useLocation();
   return (
     <>
       <header className="header">
@@ -19,7 +20,7 @@ export default function Header() {
             <li>
               <Link
                 to={"/"}
-                className={location.pathname === "/*" ? "activeLink" : ""}
+                className={location.pathname === "/" ? "activeLink" : ""}
               >
                 <p> Accueil</p>
               </Link>
@@ -27,7 +28,7 @@ export default function Header() {
             <li>
               <Link
                 to={"/about"}
-                className={location.pathname === "*/about" ? "activeLink" : ""}
+                className={location.pathname === "/about" ? "activeLink" : ""}
               >
                 <p>À Propos</p>
               </Link>
