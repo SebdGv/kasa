@@ -7,7 +7,7 @@
 }
 
 .imgBanner {
-  width: 335px;
+  width: 100%;
   height: 111px;
   border-radius: 10px;
 
@@ -34,9 +34,6 @@
 }
 
 @media screen and (min-width: 600px) {
-  .imgBanner {
-    width: 100%;
-  }
   .textBanner {
     top: 20%;
     left: auto;
