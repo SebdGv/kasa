@@ -24,8 +24,15 @@
   background: $gray;
   color: $black;
   border-radius: 5px;
-  padding: 0 0 20px 0;
-  margin: 20px;
+  padding: 0 20px;
+  margin: 0 20px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in, padding 0.5s ease-in;
+  &.dropdown-open {
+    max-height: 200px;
+    padding: 20px 20px;
+  }
   & li {
     font-size: 12px;
   }
@@ -35,9 +42,6 @@
   transition: 0.3s;
 }
 
-.dropdown-close {
-  display: none;
-}
 .rotate-arrow {
   transform: rotate(180deg);
 }

@@ -3,7 +3,7 @@ import "./dropdown.scss";
 
 // eslint-disable-next-line react/prop-types
 export default function Dropdown({ title, content }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
@@ -12,12 +12,12 @@ export default function Dropdown({ title, content }) {
         <button className="dropdown-toggle" onClick={toggleDropdown}>
           {title}
           <img
-            className={`arrow ${!isOpen ? "rotate-arrow" : ""}`}
+            className={`arrow ${!isOpen ? "" : "rotate-arrow"}`}
             src="/src/assets/smallArrow.svg"
             alt="open arrow"
           />
         </button>
-        <ul className={`dropdown-menu ${!isOpen ? "dropdown-close" : ""}`}>
+        <ul className={`dropdown-menu ${!isOpen ? "dropdown-open" : ""}`}>
           {Array.isArray(content) ? (
             // eslint-disable-next-line react/prop-types
             content.map((item, index) => <li key={index}>{item}</li>)
