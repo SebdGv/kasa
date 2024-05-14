@@ -9,7 +9,7 @@
   max-width: 335px;
   min-height: 255px;
   border-radius: 10px;
-  overflow: hidden; // Assure que le pseudo-élément ne dépasse pas les bords arrondis
+  overflow: hidden;
   transition: 0.2s ease-in-out;
 
   &::after {
@@ -26,7 +26,7 @@
       rgba(4, 4, 4, 0.205) 99.99%,
       rgba(0, 0, 0, 0.5) 100%
     );
-    pointer-events: none; // Permet les interactions avec des éléments sous le gradient
+    pointer-events: none;
   }
 }
 .thumbnail:hover {

@@ -19,6 +19,7 @@ export default function Thumbnail({ id, title, cover }) {
   );
 }
 
+// Définition des PropTypes pour la validation des props
 Thumbnail.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

@@ -11,6 +11,7 @@ export default function TagName({ tag }) {
   );
 }
 
+// Déclaration des PropTypes
 TagName.propTypes = {
   tag: PropTypes.string.isRequired,
 };

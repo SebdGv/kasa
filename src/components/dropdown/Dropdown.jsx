@@ -3,8 +3,8 @@ import { useState } from "react";
 import "./dropdown.scss";
 
 export default function Dropdown({ title, content }) {
-  const [isOpen, setIsOpen] = useState(true);
-  const toggleDropdown = () => setIsOpen(!isOpen);
+  const [isOpen, setIsOpen] = useState(true); // État pour gérer le dropdown
+  const toggleDropdown = () => setIsOpen(!isOpen); // Fonction pour inverser l'état
 
   return (
     <>
@@ -18,10 +18,10 @@ export default function Dropdown({ title, content }) {
           />
         </button>
         <ul className={`dropdown-menu ${!isOpen ? "dropdown-open" : ""}`}>
-          {Array.isArray(content) ? (
+          {Array.isArray(content) ? ( // Vérification si le contenu est un tableau
             content.map((item, index) => <li key={index}>{item}</li>)
           ) : (
-            <li>{content}</li>
+            <li>{content}</li> // Affichage du contenu s'il n'est pas un tableau
           )}
         </ul>
       </div>

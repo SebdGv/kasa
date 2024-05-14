@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import "./rating.scss";
 
 export default function Rating({ rating }) {
-  const stars = Array.from({ length: 5 }, (_, index) => index < rating);
+  const stars = Array.from({ length: 5 }, (_, index) => index < rating); // Création d'un tableau de 5 éléments, chaque élément est vrai si l'index est inférieur à la note
 
   return (
     <>
@@ -21,6 +21,7 @@ export default function Rating({ rating }) {
   );
 }
 
+// Déclaration des PropTypes pour la validation des props
 Rating.propTypes = {
   rating: PropTypes.string.isRequired,
 };

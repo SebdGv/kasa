@@ -12,6 +12,7 @@ export default function ProfilIcon({ hostName, hostPicture }) {
   );
 }
 
+// Déclaration des PropTypes
 ProfilIcon.propTypes = {
   hostName: PropTypes.string.isRequired,
   hostPicture: PropTypes.string.isRequired,

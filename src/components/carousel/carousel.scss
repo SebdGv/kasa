@@ -31,7 +31,7 @@
   cursor: pointer;
   font-size: 19px;
   color: $white;
-  z-index: 10; // Assure que les flèches sont au-dessus de l'image
+  z-index: 10;
 }
 
 @media screen and (min-width: 600px) {
@@ -52,6 +52,6 @@
     color: $white;
   }
   .navArrow {
-    font-size: 46px; // Taille des icônes augmentée pour une meilleure visibilité
+    font-size: 46px;
   }
 }
