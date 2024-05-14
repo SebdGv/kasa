@@ -28,6 +28,7 @@ export default function Dropdown({ title, content }) {
     </>
   );
 }
+
 // Déclaration des PropTypes
 Dropdown.propTypes = {
   title: PropTypes.string.isRequired,
