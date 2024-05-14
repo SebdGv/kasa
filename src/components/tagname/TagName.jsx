@@ -1,6 +1,6 @@
+import PropTypes from "prop-types";
 import "./tagName.scss";
 
-// eslint-disable-next-line react/prop-types
 export default function TagName({ tag }) {
   return (
     <>
@@ -10,3 +10,7 @@ export default function TagName({ tag }) {
     </>
   );
 }
+
+TagName.propTypes = {
+  tag: PropTypes.string.isRequired,
+};

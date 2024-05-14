@@ -1,6 +1,6 @@
+import PropTypes from "prop-types";
 import "./profilIcon.scss";
 
-// eslint-disable-next-line react/prop-types
 export default function ProfilIcon({ hostName, hostPicture }) {
   return (
     <>
@@ -11,3 +11,8 @@ export default function ProfilIcon({ hostName, hostPicture }) {
     </>
   );
 }
+
+ProfilIcon.propTypes = {
+  hostName: PropTypes.string.isRequired,
+  hostPicture: PropTypes.string.isRequired,
+};

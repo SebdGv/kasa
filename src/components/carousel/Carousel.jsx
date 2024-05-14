@@ -1,9 +1,9 @@
-/* eslint-disable react/prop-types */
 import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
 import { useState } from "react";
 import "./carousel.scss";
 
@@ -11,8 +11,7 @@ export default function Carousel({ images }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   if (!images || images.length === 0) {
-    // eslint-disable-next-line react/no-unescaped-entities
-    return <div>Pas d'images disponibles</div>;
+    return <div>Pas d&apos;images disponibles</div>;
   }
 
   const nextImage = () => {
@@ -54,3 +53,6 @@ export default function Carousel({ images }) {
     </>
   );
 }
+Carousel.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.string).isRequired,
+};

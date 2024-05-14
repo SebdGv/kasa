@@ -1,8 +1,8 @@
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
 import "./rating.scss";
 
-// eslint-disable-next-line react/prop-types
 export default function Rating({ rating }) {
   const stars = Array.from({ length: 5 }, (_, index) => index < rating);
 
@@ -20,3 +20,7 @@ export default function Rating({ rating }) {
     </>
   );
 }
+
+Rating.propTypes = {
+  rating: PropTypes.string.isRequired,
+};

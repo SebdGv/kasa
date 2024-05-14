@@ -1,7 +1,7 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 import "./dropdown.scss";
 
-// eslint-disable-next-line react/prop-types
 export default function Dropdown({ title, content }) {
   const [isOpen, setIsOpen] = useState(true);
   const toggleDropdown = () => setIsOpen(!isOpen);
@@ -19,7 +19,6 @@ export default function Dropdown({ title, content }) {
         </button>
         <ul className={`dropdown-menu ${!isOpen ? "dropdown-open" : ""}`}>
           {Array.isArray(content) ? (
-            // eslint-disable-next-line react/prop-types
             content.map((item, index) => <li key={index}>{item}</li>)
           ) : (
             <li>{content}</li>
@@ -29,3 +28,11 @@ export default function Dropdown({ title, content }) {
     </>
   );
 }
+// Déclaration des PropTypes
+Dropdown.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
+};

@@ -1,7 +1,7 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./thumbnail.scss";
 
-// eslint-disable-next-line react/prop-types
 export default function Thumbnail({ id, title, cover }) {
   const thumbnailStyle = {
     background: `url(${cover})`,
@@ -18,3 +18,9 @@ export default function Thumbnail({ id, title, cover }) {
     </>
   );
 }
+
+Thumbnail.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired,
+};
