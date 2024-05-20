@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
 
   background: $main-color;
   color: $white;
@@ -26,6 +27,7 @@
   border-radius: 5px;
   padding: 0 20px;
   margin: 0 20px;
+
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.35s ease, padding 0.35s ease;
